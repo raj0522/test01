@@ -5,7 +5,7 @@ on:
 
 jobs:
   test:
-
+    name: test execution
     runs-on: ubuntu-latest
     steps:
     - name: Set up Ruby
