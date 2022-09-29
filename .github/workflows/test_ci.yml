@@ -1,7 +1,7 @@
 name: reusable workflow for test execustion
 
 on:
-  workflow_dispatch:
+  workflow_call:
 
 jobs:
   test:
@@ -16,9 +16,9 @@ jobs:
     # name: Set up Ruby
     # To automatically get bug fixes and new Ruby versions for ruby/setup-ruby,
     # change this to (see https://github.com/ruby/setup-ruby#versioning):
-    - uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: ${{ matrix.ruby-version }}
-        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+    # uses: ruby/setup-ruby@v1
+    #  with:
+    #    ruby-version: ${{ matrix.ruby-version }}
+    #    bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Run tests
       run: ruby test.rb
