@@ -14,4 +14,4 @@ jobs:
           ruby-version: 2.7
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - name: Run tests
-        run: ruby raj0522/test01/main/test.rb
+        run: ruby /main/test.rb
