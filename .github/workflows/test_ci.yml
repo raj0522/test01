@@ -1,7 +1,7 @@
 name: reusable workflow for test execustion
 
 on:
-  workflow_call:
+  workflow_dispatch:
 
 jobs:
   test:
