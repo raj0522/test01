@@ -9,13 +9,6 @@ name: reusable workflow for test execustion
 
 on:
   workflow_call:
-    inputs:
-      username:
-        required: false
-        type: string
-    secrets:
-      token:
-        required: false
 
 jobs:
   test:
